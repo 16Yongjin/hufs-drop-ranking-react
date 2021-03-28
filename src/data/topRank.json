@@ -1,0 +1,850 @@
+[
+  [
+    {
+      "id": "A05487101",
+      "rank": 1,
+      "name": "멕시코.중미.카리브지역의이해",
+      "professor": "김영현",
+      "delta": 12
+    },
+    {
+      "id": "C02353201",
+      "rank": 2,
+      "name": "조직행태론",
+      "professor": "김선영",
+      "delta": 11
+    },
+    {
+      "id": "B01538101",
+      "rank": 3,
+      "name": "중국문화데이터웹퍼블리싱",
+      "professor": "박정원",
+      "delta": 10
+    },
+    {
+      "id": "A01223301",
+      "rank": 4,
+      "name": "미국의이해",
+      "professor": "Marguerite Yunmie Kim",
+      "delta": 9
+    },
+    {
+      "id": "P01456201",
+      "rank": 4,
+      "name": "증권분석론",
+      "professor": "하석근",
+      "delta": 9
+    },
+    {
+      "id": "G03474101",
+      "rank": 4,
+      "name": "계약을통한거래",
+      "professor": "가정준",
+      "delta": 9
+    },
+    {
+      "id": "B02827101",
+      "rank": 4,
+      "name": "일본고전명작의세계",
+      "professor": "엄교흠",
+      "delta": 9
+    },
+    {
+      "id": "C01456101",
+      "rank": 4,
+      "name": "동북아정치외교사",
+      "professor": "유현주",
+      "delta": 9
+    },
+    {
+      "id": "B01507101",
+      "rank": 4,
+      "name": "중.한통번역실습",
+      "professor": "여정남",
+      "delta": 9
+    },
+    {
+      "id": "B08134201",
+      "rank": 4,
+      "name": "중급터어키어회화",
+      "professor": "Nadir Engin Uzun",
+      "delta": 9
+    },
+    {
+      "id": "D03313101",
+      "rank": 11,
+      "name": "원가회계",
+      "professor": "손동현",
+      "delta": 8
+    },
+    {
+      "id": "D03505201",
+      "rank": 11,
+      "name": "기업지배구조",
+      "professor": "유태영",
+      "delta": 8
+    },
+    {
+      "id": "K01318101",
+      "rank": 11,
+      "name": "The Politics of Technology",
+      "professor": "Daniel Phillip Connolly",
+      "delta": 8
+    },
+    {
+      "id": "A05341101",
+      "rank": 11,
+      "name": "중남미정치",
+      "professor": "하상섭",
+      "delta": 8
+    },
+    {
+      "id": "D01405403",
+      "rank": 15,
+      "name": "마케팅관리",
+      "professor": "윤원주",
+      "delta": 7
+    },
+    {
+      "id": "D03382203",
+      "rank": 15,
+      "name": "인적자원관리",
+      "professor": "양재완",
+      "delta": 7
+    },
+    {
+      "id": "C03217101",
+      "rank": 15,
+      "name": "국가브랜드,국가이미지",
+      "professor": "김선진",
+      "delta": 7
+    },
+    {
+      "id": "K01109201",
+      "rank": 15,
+      "name": "Volunteer ServiceⅠ",
+      "professor": "황재호",
+      "delta": 7
+    },
+    {
+      "id": "A05469201",
+      "rank": 15,
+      "name": "중남미발전과사회변동",
+      "professor": "하상섭",
+      "delta": 7
+    },
+    {
+      "id": "D01203302",
+      "rank": 20,
+      "name": "경영학원론",
+      "professor": "Shrestha Dipendra L",
+      "delta": 6
+    },
+    {
+      "id": "D01405404",
+      "rank": 20,
+      "name": "마케팅관리",
+      "professor": "윤원주",
+      "delta": 6
+    },
+    {
+      "id": "D01314103",
+      "rank": 20,
+      "name": "조직행동",
+      "professor": "유태영",
+      "delta": 6
+    },
+    {
+      "id": "D03313102",
+      "rank": 20,
+      "name": "원가회계",
+      "professor": "손동현",
+      "delta": 6
+    },
+    {
+      "id": "K01455101",
+      "rank": 20,
+      "name": "Introduction to Korean Law",
+      "professor": "심갑영",
+      "delta": 6
+    },
+    {
+      "id": "D01473301",
+      "rank": 20,
+      "name": "International Political Economy",
+      "professor": "김병주",
+      "delta": 6
+    },
+    {
+      "id": "K01247202",
+      "rank": 20,
+      "name": "International Relations Theory",
+      "professor": "Daniel Phillip Connolly",
+      "delta": 6
+    },
+    {
+      "id": "K01241201",
+      "rank": 20,
+      "name": "Korean Politics and Diplomacy",
+      "professor": "황재호",
+      "delta": 6
+    },
+    {
+      "id": "E04406201",
+      "rank": 20,
+      "name": "한국어발음",
+      "professor": "윤영해",
+      "delta": 6
+    },
+    {
+      "id": "B01252101",
+      "rank": 20,
+      "name": "중국안보문제연구",
+      "professor": "Joel Peter Atkinson",
+      "delta": 6
+    },
+    {
+      "id": "C02309201",
+      "rank": 20,
+      "name": "공공관리론",
+      "professor": "김선영",
+      "delta": 6
+    }
+  ],
+  [
+    {
+      "id": "U71830101",
+      "rank": 1,
+      "name": "현대사회와철학",
+      "professor": "이준\n                        \n                           ",
+      "delta": 22
+    },
+    {
+      "id": "U74114101",
+      "rank": 2,
+      "name": "기업과법",
+      "professor": "윤승영",
+      "delta": 13
+    },
+    {
+      "id": "U04202401",
+      "rank": 3,
+      "name": "현대사회의윤리문제",
+      "professor": "이준\n                        \n                           ",
+      "delta": 12
+    },
+    {
+      "id": "U72133201",
+      "rank": 4,
+      "name": "사회봉사",
+      "professor": "박상원",
+      "delta": 10
+    },
+    {
+      "id": "U74110201",
+      "rank": 4,
+      "name": "민법의이해",
+      "professor": "가정준",
+      "delta": 10
+    },
+    {
+      "id": "U54135401",
+      "rank": 6,
+      "name": "중앙아시아문화의이해",
+      "professor": "김상철",
+      "delta": 9
+    },
+    {
+      "id": "Y21163201",
+      "rank": 7,
+      "name": "추리논증",
+      "professor": "김신",
+      "delta": 8
+    },
+    {
+      "id": "U71846101",
+      "rank": 7,
+      "name": "다큐멘터리를통한과학세계",
+      "professor": "정경숙",
+      "delta": 8
+    },
+    {
+      "id": "U51417201",
+      "rank": 7,
+      "name": "우주와인간",
+      "professor": "정연철",
+      "delta": 8
+    },
+    {
+      "id": "U76270102",
+      "rank": 10,
+      "name": "국제사회와국제기구",
+      "professor": "이영주",
+      "delta": 7
+    },
+    {
+      "id": "U51624101",
+      "rank": 10,
+      "name": "뉴스의이론과실제",
+      "professor": "고대훈",
+      "delta": 7
+    },
+    {
+      "id": "U78313101",
+      "rank": 10,
+      "name": "불법행위와손해배상",
+      "professor": "박석일",
+      "delta": 7
+    },
+    {
+      "id": "U74119101",
+      "rank": 10,
+      "name": "현대경제의기초원리",
+      "professor": "손정국",
+      "delta": 7
+    },
+    {
+      "id": "Y21102201",
+      "rank": 10,
+      "name": "외국어로서의한국어교육의이해",
+      "professor": "정해권",
+      "delta": 7
+    },
+    {
+      "id": "U71851101",
+      "rank": 15,
+      "name": "스포츠의글로벌문화",
+      "professor": "황의룡",
+      "delta": 6
+    },
+    {
+      "id": "Y51114201",
+      "rank": 15,
+      "name": "문학비평의이해",
+      "professor": "이정현",
+      "delta": 6
+    },
+    {
+      "id": "Y21154201",
+      "rank": 15,
+      "name": "기업과윤리",
+      "professor": "김신",
+      "delta": 6
+    },
+    {
+      "id": "U76265501",
+      "rank": 15,
+      "name": "철학으로의초대",
+      "professor": "김윤재",
+      "delta": 6
+    },
+    {
+      "id": "U04228201",
+      "rank": 15,
+      "name": "창업실무사례및웹디자인",
+      "professor": "한광덕",
+      "delta": 6
+    },
+    {
+      "id": "U76355103",
+      "rank": 15,
+      "name": "외국인을위한말하기",
+      "professor": "정회란",
+      "delta": 6
+    },
+    {
+      "id": "U72207302",
+      "rank": 21,
+      "name": "컴퓨터프로그래밍",
+      "professor": "김계완",
+      "delta": 5
+    },
+    {
+      "id": "Y55129308",
+      "rank": 21,
+      "name": "컴퓨팅사고",
+      "professor": "김계완",
+      "delta": 5
+    },
+    {
+      "id": "U71821101",
+      "rank": 21,
+      "name": "문학과정신분석",
+      "professor": "이정현",
+      "delta": 5
+    },
+    {
+      "id": "Y21168201",
+      "rank": 21,
+      "name": "희곡과시나리오쓰기",
+      "professor": "안성호",
+      "delta": 5
+    },
+    {
+      "id": "Y21109201",
+      "rank": 21,
+      "name": "동유럽.발칸문화의이해",
+      "professor": "김철민",
+      "delta": 5
+    },
+    {
+      "id": "U54119401",
+      "rank": 21,
+      "name": "서유럽문화의이해",
+      "professor": "조규희",
+      "delta": 5
+    },
+    {
+      "id": "U04219101",
+      "rank": 21,
+      "name": "예술과창의적사고",
+      "professor": "신수진",
+      "delta": 5
+    },
+    {
+      "id": "U51103301",
+      "rank": 21,
+      "name": "과학과문명",
+      "professor": "정경숙",
+      "delta": 5
+    },
+    {
+      "id": "Y51101301",
+      "rank": 21,
+      "name": "논리학입문",
+      "professor": "김신",
+      "delta": 5
+    },
+    {
+      "id": "U71900101",
+      "rank": 21,
+      "name": "시학과기호학",
+      "professor": "전기순",
+      "delta": 5
+    }
+  ],
+  [
+    {
+      "id": "T04482101",
+      "rank": 1,
+      "name": "머신러닝",
+      "professor": "한희일",
+      "delta": 12
+    },
+    {
+      "id": "T03203302",
+      "rank": 2,
+      "name": "자료구조",
+      "professor": "김희철",
+      "delta": 10
+    },
+    {
+      "id": "O04417101",
+      "rank": 3,
+      "name": "이슬람법",
+      "professor": "마르샴",
+      "delta": 8
+    },
+    {
+      "id": "D01101E02",
+      "rank": 4,
+      "name": "경제학개론",
+      "professor": "김선태",
+      "delta": 7
+    },
+    {
+      "id": "O03307101",
+      "rank": 4,
+      "name": "마.인비교문학",
+      "professor": "Sony Karsono",
+      "delta": 7
+    },
+    {
+      "id": "P01314101",
+      "rank": 6,
+      "name": "글로벌금융과무역특강",
+      "professor": "백재승",
+      "delta": 6
+    },
+    {
+      "id": "O14319101",
+      "rank": 6,
+      "name": "한아프리카외교관계",
+      "professor": "조준화",
+      "delta": 6
+    },
+    {
+      "id": "T03202301",
+      "rank": 6,
+      "name": "자료구조및알고리즘",
+      "professor": "Bernardo Nugroho Yahya",
+      "delta": 6
+    },
+    {
+      "id": "T04342301",
+      "rank": 6,
+      "name": "알고리즘",
+      "professor": "신찬수",
+      "delta": 6
+    },
+    {
+      "id": "R01419101",
+      "rank": 6,
+      "name": "동양철학고전선독",
+      "professor": "김원명",
+      "delta": 6
+    },
+    {
+      "id": "N12471201",
+      "rank": 6,
+      "name": "고급체코어통번역실습1",
+      "professor": "Tereza Snellerova",
+      "delta": 6
+    },
+    {
+      "id": "O15201101",
+      "rank": 6,
+      "name": "한국현대소설명작세미나",
+      "professor": "최현희",
+      "delta": 6
+    },
+    {
+      "id": "N01332102",
+      "rank": 13,
+      "name": "영.미단편소설과번역실습",
+      "professor": "박순강",
+      "delta": 5
+    },
+    {
+      "id": "B02451201",
+      "rank": 13,
+      "name": "일본어어휘론",
+      "professor": "정상철",
+      "delta": 5
+    },
+    {
+      "id": "V44303201",
+      "rank": 13,
+      "name": "자료구조",
+      "professor": "박상원",
+      "delta": 5
+    },
+    {
+      "id": "T03203303",
+      "rank": 13,
+      "name": "자료구조",
+      "professor": "신찬수",
+      "delta": 5
+    },
+    {
+      "id": "N02413101",
+      "rank": 13,
+      "name": "한.불통역연습",
+      "professor": "이향",
+      "delta": 5
+    },
+    {
+      "id": "P05201101",
+      "rank": 18,
+      "name": "데이터구조",
+      "professor": "이근섭",
+      "delta": 4
+    },
+    {
+      "id": "D10405701",
+      "rank": 18,
+      "name": "마케팅관리",
+      "professor": "전종근",
+      "delta": 4
+    },
+    {
+      "id": "N01386101",
+      "rank": 18,
+      "name": "영어문장연구",
+      "professor": "김광섭",
+      "delta": 4
+    },
+    {
+      "id": "C03303102",
+      "rank": 18,
+      "name": "P.R의이해",
+      "professor": "서미라",
+      "delta": 4
+    },
+    {
+      "id": "P01312101",
+      "rank": 18,
+      "name": "벤처투자금융론",
+      "professor": "나찬휘",
+      "delta": 4
+    },
+    {
+      "id": "O12211101",
+      "rank": 18,
+      "name": "동아프리카경제발전론",
+      "professor": "배유진",
+      "delta": 4
+    },
+    {
+      "id": "A04215201",
+      "rank": 18,
+      "name": "러시아어텍스트분석",
+      "professor": "김수환",
+      "delta": 4
+    },
+    {
+      "id": "A04301401",
+      "rank": 18,
+      "name": "19세기러시아문학과사회",
+      "professor": "라승도",
+      "delta": 4
+    },
+    {
+      "id": "T03108701",
+      "rank": 18,
+      "name": "선형대수",
+      "professor": "남윤호",
+      "delta": 4
+    },
+    {
+      "id": "N07307101",
+      "rank": 18,
+      "name": "브라질거시경제분석",
+      "professor": "윤택동",
+      "delta": 4
+    },
+    {
+      "id": "N14307301",
+      "rank": 18,
+      "name": "고급세/크어회화작문1",
+      "professor": "Dejan Duric",
+      "delta": 4
+    },
+    {
+      "id": "F05105501",
+      "rank": 18,
+      "name": "미적분학1",
+      "professor": "신동화",
+      "delta": 4
+    },
+    {
+      "id": "O10157101",
+      "rank": 18,
+      "name": "아프리카정치경제개론",
+      "professor": "황규득",
+      "delta": 4
+    }
+  ],
+  [
+    {
+      "id": "Y55129406",
+      "rank": 1,
+      "name": "컴퓨팅사고",
+      "professor": "김영란",
+      "delta": 18
+    },
+    {
+      "id": "Y71116101",
+      "rank": 2,
+      "name": "드라마로배우는영어",
+      "professor": "김은혜",
+      "delta": 7
+    },
+    {
+      "id": "U72207406",
+      "rank": 3,
+      "name": "컴퓨터프로그래밍",
+      "professor": "이영호",
+      "delta": 6
+    },
+    {
+      "id": "U76220501",
+      "rank": 3,
+      "name": "라틴어와로마문명",
+      "professor": "손윤락",
+      "delta": 6
+    },
+    {
+      "id": "U71815301",
+      "rank": 3,
+      "name": "희곡과시나리오작법",
+      "professor": "최원선",
+      "delta": 6
+    },
+    {
+      "id": "Y21129101",
+      "rank": 3,
+      "name": "한국전통예술의이해",
+      "professor": "김정숙",
+      "delta": 6
+    },
+    {
+      "id": "U51108201",
+      "rank": 3,
+      "name": "신화와종교",
+      "professor": "한우섭",
+      "delta": 6
+    },
+    {
+      "id": "E03109101",
+      "rank": 3,
+      "name": "한국근.현대사",
+      "professor": "이숙화",
+      "delta": 6
+    },
+    {
+      "id": "U74110101",
+      "rank": 3,
+      "name": "민법의이해",
+      "professor": "박희호",
+      "delta": 6
+    },
+    {
+      "id": "U76345201",
+      "rank": 3,
+      "name": "한국사회의이해",
+      "professor": "김옥현",
+      "delta": 6
+    },
+    {
+      "id": "U72133101",
+      "rank": 3,
+      "name": "사회봉사",
+      "professor": "박상원",
+      "delta": 6
+    },
+    {
+      "id": "Y55129407",
+      "rank": 12,
+      "name": "컴퓨팅사고",
+      "professor": "이민나",
+      "delta": 5
+    },
+    {
+      "id": "U76253501",
+      "rank": 12,
+      "name": "고전그리스어와그리스문명",
+      "professor": "손윤락",
+      "delta": 5
+    },
+    {
+      "id": "Y51232101",
+      "rank": 12,
+      "name": "루쉰과동아시아문학과문화",
+      "professor": "박남용",
+      "delta": 5
+    },
+    {
+      "id": "U72223301",
+      "rank": 12,
+      "name": "언어와광고",
+      "professor": "류병율",
+      "delta": 5
+    },
+    {
+      "id": "U76296201",
+      "rank": 12,
+      "name": "멀티미디어제작",
+      "professor": "박정윤",
+      "delta": 5
+    },
+    {
+      "id": "Y91151101",
+      "rank": 12,
+      "name": "서양문학과르네상스정신",
+      "professor": "김윤정",
+      "delta": 5
+    },
+    {
+      "id": "U76265401",
+      "rank": 12,
+      "name": "철학으로의초대",
+      "professor": "이준",
+      "delta": 5
+    },
+    {
+      "id": "Y51147101",
+      "rank": 12,
+      "name": "한국미디어산업의이해",
+      "professor": "정재훈",
+      "delta": 5
+    },
+    {
+      "id": "Y51226101",
+      "rank": 12,
+      "name": "국가와사회: 민주주의의이해",
+      "professor": "김형기",
+      "delta": 5
+    },
+    {
+      "id": "U76353101",
+      "rank": 12,
+      "name": "용인학입문",
+      "professor": "한동현",
+      "delta": 5
+    },
+    {
+      "id": "Y71110101",
+      "rank": 12,
+      "name": "여행중국어",
+      "professor": "서지은",
+      "delta": 5
+    },
+    {
+      "id": "U51041401",
+      "rank": 23,
+      "name": "정보사회의통계활용",
+      "professor": "강기훈",
+      "delta": 4
+    },
+    {
+      "id": "U72183301",
+      "rank": 23,
+      "name": "문학과대중",
+      "professor": "한상효",
+      "delta": 4
+    },
+    {
+      "id": "Y91150101",
+      "rank": 23,
+      "name": "모더니즘예술론",
+      "professor": "김윤정",
+      "delta": 4
+    },
+    {
+      "id": "U54120301",
+      "rank": 23,
+      "name": "아프리카문화의이해",
+      "professor": "윤서영",
+      "delta": 4
+    },
+    {
+      "id": "Y21163101",
+      "rank": 23,
+      "name": "추리논증",
+      "professor": "오희철",
+      "delta": 4
+    },
+    {
+      "id": "Y21147101",
+      "rank": 23,
+      "name": "한국사와동아시아",
+      "professor": "구도영",
+      "delta": 4
+    },
+    {
+      "id": "U72189201",
+      "rank": 23,
+      "name": "현대사회와기록관리",
+      "professor": "이정연",
+      "delta": 4
+    },
+    {
+      "id": "Y91140101",
+      "rank": 23,
+      "name": "4차산업혁명과융합시대의이해",
+      "professor": "김영란",
+      "delta": 4
+    }
+  ]
+]

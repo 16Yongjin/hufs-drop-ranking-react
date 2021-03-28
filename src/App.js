@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import './App.css'
+import List from './views/List'
+import Detail from './views/Detail'
+import Home from './views/Home'
+import Search from './views/Search'
+import { useStore } from './store'
 
 function App() {
+  const fetchLectures = useStore((state) => state.fetchLectures)
+
+  useEffect(() => {
+    console.log('app effect')
+    fetchLectures()
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/list/:campusType">
+            <List />
+          </Route>
+          <Route path="/detail/:id">
+            <Detail />
+          </Route>
+          <Route path="/search/:query">
+            <Search />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App
