@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
 import List from './views/List'
 import Detail from './views/Detail'
@@ -11,7 +11,6 @@ function App() {
   const fetchLectures = useStore((state) => state.fetchLectures)
 
   useEffect(() => {
-    console.log('app effect')
     fetchLectures()
   })
 

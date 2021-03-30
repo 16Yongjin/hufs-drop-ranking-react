@@ -1,11 +1,21 @@
-import { Heading, Link, Pane, Table } from 'evergreen-ui'
+import { Heading, Link, Pane, Table, Tooltip } from 'evergreen-ui'
 import React from 'react'
 import { useHistory } from 'react-router'
 import Navbar from '../components/StickyNavbar'
-import { campusEnum, campusKo } from '../data/campus'
+import { campusEnum, campusKo, dropCounts } from '../data/campus'
 import lectureList from '../data/topRank.json'
 import removeLectureList from '../data/removed.json'
+import dropByDay from '../data/dropByDay.json'
 import styled from 'styled-components'
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+} from 'recharts'
 
 const MiniTable = ({ lectures }) => {
   const history = useHistory()
@@ -53,6 +63,7 @@ const MiniTable = ({ lectures }) => {
     </Table>
   )
 }
+
 const MiniTable2 = ({ lectures }) => {
   return (
     <Table>
@@ -75,6 +86,21 @@ const MiniTable2 = ({ lectures }) => {
         ))}
       </Table.Body>
     </Table>
+  )
+}
+
+const TrendChart = ({ data }) => {
+  return (
+    <ResponsiveContainer height={350} width="99%">
+      <BarChart data={data} margin={{ right: 16 }}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="day" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="drop" fill="#00C49F" />
+      </BarChart>
+    </ResponsiveContainer>
   )
 }
 
@@ -109,16 +135,19 @@ const Home = () => {
         marginBottom={16}
         background="white"
       >
-        <Heading size={800} fontWeight={600}>
-          한국외대 21-1 Drop 랭킹
-        </Heading>
+        <Pane display="flex" alignItems="center">
+          <img src="/logo192.png" alt="logo" width="42px" />
+          <Heading size={800} fontWeight={600} marginLeft={8}>
+            한국외대 Drop 랭킹
+          </Heading>
+        </Pane>
       </Pane>
 
       <div className="grid">
         {campusKo.map((campus, idx) => (
           <Pane
             key={campus}
-            marginBottom={32}
+            marginBottom={16}
             paddingY={16}
             background="white"
             elevation={1}
@@ -146,14 +175,53 @@ const Home = () => {
 
       <Pane>
         <Heading size={700} fontWeight={600} padding={16} background="white">
+          💧 날짜별 Drop 개수
+        </Heading>
+      </Pane>
+      <div className="grid">
+        {['설캠', '글캠'].map((campus, idx) => (
+          <Pane
+            key={campus}
+            background="white"
+            elevation={1}
+            paddingY={16}
+            marginBottom={16}
+          >
+            <Heading size={700} fontWeight={600} padding={16} paddingBottom={0}>
+              {campus} Drop 개수
+            </Heading>
+            <Heading
+              color="#777"
+              size={500}
+              fontWeight={600}
+              paddingX={16}
+              paddingY={8}
+            >
+              총 {dropCounts[idx]}개
+            </Heading>
+            <Pane marginY={16}>
+              <TrendChart data={dropByDay[idx]} />
+            </Pane>
+          </Pane>
+        ))}
+      </div>
+
+      <Pane>
+        <Heading size={700} fontWeight={600} padding={16} background="white">
           ⚰️ 사라진 강의
         </Heading>
       </Pane>
       <div className="grid">
         {['설캠', '글캠'].map((campus, idx) => (
-          <Pane key={campus} background="white" elevation={1} paddingY={16}>
+          <Pane
+            key={campus}
+            background="white"
+            elevation={1}
+            paddingY={16}
+            marginBottom={16}
+          >
             <Heading size={700} fontWeight={600} padding={16}>
-              {campus} 사라진 강의
+              {campus} 사라진 강의 {removeLectureList[idx].length}개
             </Heading>
             <Pane margin={16} elevation={1}>
               <MiniTable2 lectures={removeLectureList[idx]} />

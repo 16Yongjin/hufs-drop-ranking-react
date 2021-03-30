@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import { useTable, useSortBy, usePagination } from 'react-table'
 import styled from 'styled-components'
 import { courseMap } from '../data/courses'
@@ -219,8 +219,6 @@ const Table = ({
 
   useEffect(() => {
     if (campusType === prevCampusType) return
-    console.log('campus change')
-
     gotoPage(0)
     setDepartment({ label: '', value: '' })
   }, [campusType, prevCampusType, gotoPage, setDepartment])

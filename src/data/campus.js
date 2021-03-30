@@ -14,6 +14,8 @@ export const campusMap = {
 
 export const campusCounts = [1528, 375, 1334, 435]
 
+export const dropCounts = [2594, 1570]
+
 export const campusKo = [
   '서울캠 전공',
   '서울캠 교양',

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useHistory } from 'react-router'
 import styled from 'styled-components'
-import { Pane, Text, ArrowLeftIcon, IconButton, Heading } from 'evergreen-ui'
+import { Pane, ArrowLeftIcon, IconButton, Heading } from 'evergreen-ui'
 
 const NavbarStyles = styled.div`
   .navbar {

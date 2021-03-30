@@ -74,8 +74,6 @@ function Search() {
     []
   )
 
-  console.log(query)
-
   useEffect(() => {
     search(myQuery)
     return () => search.cancel()

@@ -11,10 +11,13 @@ import {
   PieChart,
   Cell,
   ResponsiveContainer,
+  BarChart,
+  Legend,
+  Bar,
 } from 'recharts'
 import { useStore } from '../store'
 import styled from 'styled-components'
-import { Pane, Card, Heading, Link } from 'evergreen-ui'
+import { Pane, Card, Heading } from 'evergreen-ui'
 import { campusCounts } from '../data/campus'
 import { courseNames } from '../data/courses'
 import Navbar from '../components/BackNavbar'
@@ -57,16 +60,32 @@ const Detail = () => {
     id,
     lectures,
   ])
-  const data = useMemo(() => {
+  const countData = useMemo(() => {
     if (!lecture) return []
-    const days = ['22일', '23일', '24일', '25일', '26일', '29일']
+    const days = ['22 월', '23 화', '24 수', '25 목', '26 금', '29 월']
 
-    const data = lecture.trend.map((n, idx) => ({
+    const countData = lecture.trend.map((n, idx) => ({
       day: days[idx],
       people: n,
     }))
 
-    return data
+    return countData
+  }, [lecture])
+
+  const deltaData = useMemo(() => {
+    if (!lecture) return []
+    const days = ['23 화', '24 수', '25 목', '26 금', '29 월']
+
+    const deltas = lecture.trend
+      .slice(1)
+      .reduce((acc, v, idx) => [...acc, lecture.trend[idx] - v], [])
+
+    const deltaData = deltas.map((n, idx) => ({
+      day: days[idx],
+      drop: n,
+    }))
+
+    return deltaData
   }, [lecture])
 
   const RADIAN = Math.PI / 180
@@ -144,7 +163,7 @@ const Detail = () => {
           <LineChart
             width={370}
             height={300}
-            data={data}
+            data={countData}
             margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
           >
             <Line type="monotone" dataKey="people" stroke="#8884d8" />
@@ -153,6 +172,30 @@ const Detail = () => {
             <YAxis />
             <Tooltip />
           </LineChart>
+        </ResponsiveContainer>
+      </Card>
+
+      <Card
+        elevation={1}
+        background="white"
+        paddingBottom={8}
+        marginBottom={16}
+      >
+        <div className="header">
+          <Heading fontWeight={600} size={800} marginBottom={8}>
+            탈출 추이
+          </Heading>
+        </div>
+
+        <ResponsiveContainer width="98%" height={350}>
+          <BarChart data={deltaData} margin={{ right: 32 }}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="day" />
+            <YAxis allowDecimals={false} />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="drop" fill="#00C49F" />
+          </BarChart>
         </ResponsiveContainer>
       </Card>
 
@@ -165,7 +208,8 @@ const Detail = () => {
             {lecture.people}
           </Heading>
         </div>
-        <ResponsiveContainer height={350}>
+
+        <ResponsiveContainer width="98%" height={350}>
           <PieChart width={370} height={350}>
             <Pie
               data={[
@@ -185,7 +229,7 @@ const Detail = () => {
               labelLine={false}
               label={renderCustomizedLabel}
             >
-              {data.map((entry, index) => (
+              {countData.map((entry, index) => (
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}
