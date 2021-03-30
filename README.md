@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# 한국외대 수강신청 취소(Drop) 랭킹
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![logo192](https://user-images.githubusercontent.com/22253556/112938847-65c3fe80-9165-11eb-8d3b-138da4fc1c6a.png)
 
-## Available Scripts
+https://hufs-drop.surge.sh
 
-In the project directory, you can run:
+## 기술 스택
 
-### `yarn start`
+- React.js
+- React Table
+- Recharts
+- Evergreen UI
+- No Backend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 홈 페이지
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img width="435" alt="drop-1" src="https://user-images.githubusercontent.com/22253556/112938174-1a5d2080-9164-11eb-8954-6b550986464b.png">
 
-### `yarn test`
+## 자세히 보기 페이지
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+토스 증권 UI 따라해봄
 
-### `yarn build`
+<img width="435" alt="drop-2" src="https://user-images.githubusercontent.com/22253556/112938175-1af5b700-9164-11eb-86ad-44d8174d013c.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 목록 페이지
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React-Table 사용함
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Hook API의 로직 재활용성은 최고다.
 
-### `yarn eject`
+useTable 훅에 데이터만 건내면 페이지네이션, 정렬 API를 제공함
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="445" alt="drop-3" src="https://user-images.githubusercontent.com/22253556/112938171-192bf380-9164-11eb-937c-ff0296e63f74.png">
