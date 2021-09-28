@@ -18,9 +18,10 @@ import {
 import { useStore } from '../store'
 import styled from 'styled-components'
 import { Pane, Card, Heading } from 'evergreen-ui'
-import { campusCounts } from '../data/campus'
+import { campusCounts, campusKo } from '../data/campus'
 import { courseNames } from '../data/courses'
 import Navbar from '../components/BackNavbar'
+import { days } from '../data/days'
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
 
@@ -56,13 +57,13 @@ const Detail = () => {
   const history = useHistory()
   const { id } = useParams()
   const lectures = useStore((state) => state.lectures)
-  const lecture = useMemo(() => lectures.find((l) => l.id === id), [
-    id,
-    lectures,
-  ])
+  const lecture = useMemo(
+    () => lectures.find((l) => l.id === id),
+    [id, lectures]
+  )
+
   const countData = useMemo(() => {
     if (!lecture) return []
-    const days = ['22 월', '23 화', '24 수', '25 목', '26 금', '29 월']
 
     const countData = lecture.trend.map((n, idx) => ({
       day: days[idx],
@@ -74,14 +75,13 @@ const Detail = () => {
 
   const deltaData = useMemo(() => {
     if (!lecture) return []
-    const days = ['23 화', '24 수', '25 목', '26 금', '29 월']
 
     const deltas = lecture.trend
       .slice(1)
       .reduce((acc, v, idx) => [...acc, lecture.trend[idx] - v], [])
 
     const deltaData = deltas.map((n, idx) => ({
-      day: days[idx],
+      day: days[idx + 1],
       drop: n,
     }))
 
@@ -156,7 +156,8 @@ const Detail = () => {
             {lecture.delta}명 탈출
           </Heading>
           <Heading marginTop={8}>
-            순위: {lecture.rank}등 / {campusCounts[lecture.t]}개
+            순위: {lecture.rank}등 / {campusCounts[lecture.t]}개 (
+            {campusKo[lecture.t]})
           </Heading>
         </div>
         <ResponsiveContainer width="98%" height={300}>

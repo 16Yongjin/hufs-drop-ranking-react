@@ -4,7 +4,6 @@ import { useHistory } from 'react-router'
 import Navbar from '../components/StickyNavbar'
 import { campusEnum, campusKo, dropCounts } from '../data/campus'
 import lectureList from '../data/topRank.json'
-import removeLectureList from '../data/removed.json'
 import dropByDay from '../data/dropByDay.json'
 import styled from 'styled-components'
 import {
@@ -43,7 +42,7 @@ const MiniTable = ({ lectures }) => {
             <Table.TextCell>
               <Link
                 size={300}
-                style={{ cursor: 'pointer' }}
+                cursor={'pointer'}
                 onClick={() => {
                   history.push(`/detail/${lecture.id}`)
                 }}
@@ -57,31 +56,6 @@ const MiniTable = ({ lectures }) => {
             <Table.TextCell flexBasis={60} flexShrink={0} flexGrow={0}>
               {lecture.delta}
             </Table.TextCell>
-          </Table.Row>
-        ))}
-      </Table.Body>
-    </Table>
-  )
-}
-
-const MiniTable2 = ({ lectures }) => {
-  return (
-    <Table>
-      <Table.Head>
-        <Table.TextHeaderCell flexBasis={50} flexShrink={0} flexGrow={0}>
-          번호
-        </Table.TextHeaderCell>
-        <Table.TextHeaderCell>강의명</Table.TextHeaderCell>
-        <Table.TextHeaderCell>교수명</Table.TextHeaderCell>
-      </Table.Head>
-      <Table.Body height={240}>
-        {lectures.map((lecture, idx) => (
-          <Table.Row key={lecture.id}>
-            <Table.TextCell isNumber flexBasis={50} flexShrink={0} flexGrow={0}>
-              {idx + 1}
-            </Table.TextCell>
-            <Table.TextCell>{lecture.name}</Table.TextCell>
-            <Table.TextCell>{lecture.professor}</Table.TextCell>
           </Table.Row>
         ))}
       </Table.Body>
@@ -124,7 +98,7 @@ const Home = () => {
     <Styles>
       <Navbar>
         <Heading className="header" size={600}>
-          한국외대 21-1 Drop 랭킹
+          한국외대 21-2 Drop 랭킹
         </Heading>
       </Navbar>
 
@@ -165,7 +139,10 @@ const Home = () => {
               paddingRight={16}
               width="100%"
             >
-              <Link onClick={() => history.push(`/list/${campusEnum[idx]}`)}>
+              <Link
+                cursor={'pointer'}
+                onClick={() => history.push(`/list/${campusEnum[idx]}`)}
+              >
                 더 알아보기 {'>>'}
               </Link>
             </Pane>
@@ -201,30 +178,6 @@ const Home = () => {
             </Heading>
             <Pane marginY={16}>
               <TrendChart data={dropByDay[idx]} />
-            </Pane>
-          </Pane>
-        ))}
-      </div>
-
-      <Pane>
-        <Heading size={700} fontWeight={600} padding={16} background="white">
-          ⚰️ 사라진 강의
-        </Heading>
-      </Pane>
-      <div className="grid">
-        {['설캠', '글캠'].map((campus, idx) => (
-          <Pane
-            key={campus}
-            background="white"
-            elevation={1}
-            paddingY={16}
-            marginBottom={16}
-          >
-            <Heading size={700} fontWeight={600} padding={16}>
-              {campus} 사라진 강의 {removeLectureList[idx].length}개
-            </Heading>
-            <Pane margin={16} elevation={1}>
-              <MiniTable2 lectures={removeLectureList[idx]} />
             </Pane>
           </Pane>
         ))}

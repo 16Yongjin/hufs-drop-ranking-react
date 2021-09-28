@@ -40,10 +40,8 @@ const MiniTable = ({ lectures }) => {
             <Table.TextCell>
               <Link
                 size={300}
-                style={{ cursor: 'pointer' }}
-                onClick={() => {
-                  history.push(`/detail/${lecture.id}`)
-                }}
+                cursor={'pointer'}
+                onClick={() => history.push(`/detail/${lecture.id}`)}
               >
                 {lecture.name}
               </Link>
